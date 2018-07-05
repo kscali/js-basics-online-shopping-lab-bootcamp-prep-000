@@ -62,8 +62,8 @@ function removeFromCart(itemName) {
   for (var i = 0; i < getCart().length; i++){
     var delItem;
     if (getCart()[i].itemName === itemName) {
-      delItem = getCart().splice(i, 1);
-      return getCart();
+      delItem = cart.splice(i, 1);
+      return cart;
     } 
     if (getCart()[i].itemName !== itemName) {
       return "That item is not in your cart.";
