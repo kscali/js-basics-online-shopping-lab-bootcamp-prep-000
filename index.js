@@ -41,7 +41,7 @@ function getCartDescription() {
   }
   if ( getCart().length >= 2 ) {
     var midCartDescription = '';
-    for (var i=1; i<getCart().length -1; i++) {
+    for (var i = 1; i < getCart().length - 1; i++) {
       midCartDescription += `, ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`;
     }
     cartDescription += `${midCartDescription}, and ${getCart()[getCart().length-1].itemName} at $${getCart()[getCart().length-1].itemPrice}`;
