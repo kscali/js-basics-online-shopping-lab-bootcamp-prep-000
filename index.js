@@ -65,10 +65,9 @@ function removeFromCart(itemName) {
       delItem = cart.splice(i, 1);
       return cart;
     } 
-    if (getCart()[i].itemName !== itemName) {
       return "That item is not in your cart.";
     }
-  }
+
 }
 
 function placeOrder(cardNumber) {
