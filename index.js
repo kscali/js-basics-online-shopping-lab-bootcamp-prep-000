@@ -19,7 +19,7 @@ function addToCart(item) {
 function getCartItem(itemName) {
   return {
       itemName: itemName,
-      price: getPrice(1, 100)
+      itemPrice: getPrice(1, 100)
     };
 }
 
