@@ -53,7 +53,7 @@ function getCartDescription() {
 function total() {
   var itemTotal = 0;
   for (var i = 0; i < getCart().length; i++) {
-    itemTotal = itemTotal + getCart()[i].price;
+    itemTotal = itemTotal + getCart()[i].itemPrice;
   }
     return itemTotal;
 }
