@@ -28,7 +28,7 @@ function getPrice(min, max) {
 }
 
 function viewCart() {
-  if (getCart() === [] ) {
+  if (getCart().length === 0 ) {
    return  "Your shopping cart is empty.";
   }   
   return getCartDescription();
