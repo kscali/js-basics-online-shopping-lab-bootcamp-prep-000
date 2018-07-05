@@ -10,8 +10,8 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-    item = getCartItem(item);
-    getCart().push(item);
+    var item2 = getCartItem(item);
+    getCart().push(item2);
 
     return `${item.itemName} has been added to your cart.`;
    }
