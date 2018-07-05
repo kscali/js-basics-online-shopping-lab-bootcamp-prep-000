@@ -62,7 +62,7 @@ function removeFromCart(itemName) {
   for (var i = 0; i < getCart().length; i++){
     var delItem;
     if (getCart()[i].itemName === itemName) {
-      delItem = Array.prototype.splice(i, 1);
+      delItem = getCart().splice(i, 1);
       return getCart();
     } 
     if (getCart()[i].itemName !== itemName) {
